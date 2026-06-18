@@ -10,8 +10,7 @@ language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
-url: https://iam-vampire.github.io/uinanlucky.github.io
-root: /uinanlucky.github.io/
+url: https://iam-vampire.github.io
 permalink: wiki/:title/
 permalink_defaults:
 pretty_urls:
@@ -97,5 +96,5 @@ theme: wikiwarm
 # Deployment
 deploy:
   type: git
-  repo: https://github.com/Iam-Vampire/uinanlucky.github.io.git
+  repo: https://github.com/Iam-Vampire/iam-vampire.github.io.git
   branch: gh-pages

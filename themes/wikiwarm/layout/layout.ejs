@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="<%= config.language || 'en' %>">
+<%- partial('partial/head') %>
+<body>
+  <div class="site-wrapper">
+    <%- partial('partial/header') %>
+    <div class="outer">
+      <%- partial('partial/sidebar') %>
+      <main class="main-content">
+        <%- body %>
+      </main>
+    </div>
+    <%- partial('partial/footer') %>
+  </div>
+  <%- js('js/main') %>
+  <%- js('js/code-block') %>
+  <div class="search-overlay" id="searchOverlay">
+    <div class="search-overlay-inner">
+      <div class="search-input-wrap">
+        <input type="text" class="search-input" id="searchInput" placeholder="搜索文章...">
+        <button class="search-close" id="searchClose">&times;</button>
+      </div>
+      <div class="search-results" id="searchResults"></div>
+    </div>
+  </div>
+  <script src="<%- url_for('/js/insight.js') %>"></script>
+</body>
+</html>

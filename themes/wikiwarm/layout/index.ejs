@@ -1,0 +1,22 @@
+<%
+var indexArticle;
+var indexFile = theme.wiki && theme.wiki.default_index_file;
+if (indexFile) {
+  var query = { source: '_posts/' + indexFile };
+  indexArticle = site.posts.find(query).first();
+}
+if (indexArticle) { %>
+  <article class="wiki-index-content post-content">
+    <%- indexArticle.content %>
+  </article>
+<% } else {
+  if (theme.profile && page.current === 1) { %>
+    <%- partial('partial/profile') %>
+  <% } %>
+  <div class="post-list">
+    <% page.posts.each(function(post){ %>
+      <%- partial('partial/post-card', {post: post}) %>
+    <% }) %>
+  </div>
+  <%- partial('partial/pagination') %>
+<% } %>

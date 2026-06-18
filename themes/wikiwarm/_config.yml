@@ -1,0 +1,48 @@
+# WikiWarm Theme Configuration - Fusion of Wikitten + Warmpaper
+
+# Navigation menu
+menu:
+  首页: /
+  归档: /archives
+  分类: /categories
+  标签: /tags
+  关于: /about
+
+# Wiki settings
+wiki:
+  # If set to a path like "index.md", this page will be shown as the homepage
+  # instead of the post list. Place the file in source/_posts/
+  default_index_file: index.md
+  # Enable article categories list per expanding
+  category_perExpand: false
+  # Sidebar position: left or right
+  sidebar: left
+
+# Table of Contents (right sidebar on post pages)
+toc:
+  enable: true
+  max_depth: 3
+  min_depth: 2
+  list_number: false
+
+# Profile (shown on homepage above post list when no wiki index page)
+profile:
+  avatar: /images/logo.svg
+  description: ""
+  links:
+    - name: GitHub
+      url: https://github.com/yourname
+      icon: github
+    - name: Email
+      url: mailto:your@email.com
+      icon: email
+
+# Post excerpt
+excerpt_link: Read More
+
+# Search
+search:
+  enable: true
+
+# Footer
+copyright: ""

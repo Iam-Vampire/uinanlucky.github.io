@@ -11,6 +11,7 @@ timezone: 'Asia/Shanghai'
 
 # URL
 url: https://iam-vampire.github.io/uinanlucky.github.io
+root: /uinanlucky.github.io/
 permalink: wiki/:title/
 permalink_defaults:
 pretty_urls:
